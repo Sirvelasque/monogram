@@ -1,9 +1,8 @@
 class Item {
-  constructor(name, description, price, inStock) {
+  constructor(name, inStock, inStore) {
     this.name = name;
-    this.description = description;
-    this.price = price;
     this.inStock = inStock;
+    this.inStore = inStore;
   }
 }
 
