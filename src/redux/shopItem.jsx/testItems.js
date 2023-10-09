@@ -1,4 +1,4 @@
-const items = [
+const testitems = [
   {
     name: "green",
     price: 10,
@@ -6,7 +6,9 @@ const items = [
       "green",
       "small"
     ],
-    inStock: true
+    inStore: true,
+    inStoke: 10,
+    img: "https://concepto.de/wp-content/uploads/2019/04/doble-arcoiris-e1555373237923.jpg"
   },
   {
     name: "red",
@@ -15,7 +17,9 @@ const items = [
       "red",
       "big"
     ],
-    inStock: false
+    inStore: false,
+    inStoke: 10,
+    img: "https://concepto.de/wp-content/uploads/2019/04/doble-arcoiris-e1555373237923.jpg"
   },
   {
     name: "blue",
@@ -24,8 +28,10 @@ const items = [
       "dlue",
       "big"
     ],
-    inStock: true
+    inStore: true,
+    inStoke: 10,
+    img: "https://concepto.de/wp-content/uploads/2019/04/doble-arcoiris-e1555373237923.jpg"
   }
 ];
 
-export default items;
+export default testitems;
