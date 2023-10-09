@@ -22,10 +22,10 @@ const Container = () => {
 
   // for (let i=0 ; i <= items.length; i +=1){
   //   console.log(testitems[i].description);
-  //   const itemTest = new Item(testitems.name, )
+  //   const itemTest = new Item(testitems.name, testitems.inStore, testitems.inStoke )
   // }
   
-  //first create the component with the information in the gotted items, then create the items with the needed info for states
+  //first create the items and store them in the reducer, then create the component
   return (
     <div>
 

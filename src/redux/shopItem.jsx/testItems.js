@@ -3,8 +3,8 @@ const testitems = [
     name: "green",
     price: 10,
     description: [
-      "green",
-      "small"
+      " green",
+      " small"
     ],
     inStore: true,
     inStoke: 10,
@@ -14,8 +14,8 @@ const testitems = [
     name: "red",
     price: 20,
     description: [
-      "red",
-      "big"
+      " red",
+      " big"
     ],
     inStore: false,
     inStoke: 10,
@@ -25,11 +25,11 @@ const testitems = [
     name: "blue",
     price: 20,
     description: [
-      "dlue",
-      "big"
+      " dlue",
+      " big"
     ],
     inStore: true,
-    inStoke: 10,
+    inStoke: 0,
     img: "https://concepto.de/wp-content/uploads/2019/04/doble-arcoiris-e1555373237923.jpg"
   }
 ];
