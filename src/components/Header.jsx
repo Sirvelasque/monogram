@@ -5,7 +5,7 @@ const Header = () => {
       <div className="headerSlider">
       <ul className="slider">
     <li>
-        <input type="radio" id="slide1" name="slide" checked/>
+        <input type="radio" id="slide1" name="slide" defaultChecked/>
         <label htmlFor="slide1"></label>
           <img src="https://dribbble.s3.amazonaws.com/users/322/screenshots/872485/coldchase.jpg" alt="Panel 1"/>
     </li>
