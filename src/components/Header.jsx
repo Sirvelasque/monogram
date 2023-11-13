@@ -1,7 +1,7 @@
 import "../css/header.css"
 const Header = () => {
   return (
-    <div className="Header">
+    <div className="header">
       <div className="headerSlider">
       <ul className="slider">
     <li>
