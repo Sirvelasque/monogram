@@ -26,6 +26,12 @@ const Header = () => {
     </li>
 </ul>
       </div>
+      <div className="seeMore">
+        <div className="seeMoreText">
+          A CONSOLE FOR EVERY WORKFLOW
+        </div>
+        ⇩ ⇩ ⇩ 
+      </div>
     </div>
   )
 }
