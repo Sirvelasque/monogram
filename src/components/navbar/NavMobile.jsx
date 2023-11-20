@@ -31,7 +31,7 @@ const NavMobile = () => {
   const Workflows = () => {
 
     return(
-      <ul className="navMenuBar">
+      <ul className={`navMenuBar ${workflowShow ? 'animated fadeIn' : 'animated fadeOut'}`}>
         <li>WFirst</li>
         <li>WSecond</li>
         <li>WThird</li>
@@ -39,10 +39,10 @@ const NavMobile = () => {
     )
   }
 
-  const nav = () => {
+  const Nav = () => {
 
     return(
-      <ul className="navMenuBar">
+      <ul className={`navMenuBar ${navOptionsShow ? 'animated fadeIn' : 'animated fadeOut'}`}>
         <li>NavFirst</li>
         <li>NavSecond</li>
         <li>NavThird</li>
@@ -64,6 +64,7 @@ const NavMobile = () => {
       </ul>
       <div className="navOptions">
         {workflowShow ? <Workflows />:""}
+        {navOptionsShow ? <Nav />:""} 
       </div>
     </div>
   )

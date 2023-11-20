@@ -27,9 +27,62 @@
 
 .navMenu li {
   list-style: none;
-  margin: 0 5px;
+  margin: 5px 5px 5px 25px
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación de salida */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.animated {
+  animation-duration: 0.5s; /* Ajusta la duración según sea necesario */
+  animation-timing-function: ease-in-out;
+}
+
+.fadeIn {
+  animation-name: fadeIn;
+}
+
+.fadeOut {
+  animation-name: fadeOut;
 }
 
 .navOptions {
   position: absolute;
+  width: 250px;
+  text-align: end;
+  top: 46px;
+  right: 0;
+  background-color: rgb(22, 30, 73);
+  border: 2px solid #ccc; /* Borde del contenedor */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navMenuBar {
+  padding: 15px;
+  list-style: none;
+  
+}
+
+.navMenuBar li {
+  padding: 7px 5px;
 }
