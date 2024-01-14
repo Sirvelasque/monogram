@@ -1,38 +1,18 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { addItem,removeItem, updateItem } from "../redux/shopItem.jsx/itemsSlice";
-import Item from "./Item";
-import testitems from "../redux/shopItem.jsx/testItems";
+import React from 'react';
+import './item.css'; // Import your CSS file
 
-const Container = () => {
-  const dispatch = useDispatch();
-  const items = useSelector(state => state.items);
-
-  const handleAddItem = () => {
-    dispatch(addItem({ name: 'newItem', price: 20 }));
-  };
-
-  const handleRemoveItem = () => {
-    dispatch(removeItem('plate')); 
-  };
-
-  const handleUpdateItem = () => {
-    dispatch(updateItem({ name: 'cup', price: 12 })); 
-  };
-
-  // for (let i=0 ; i <= items.length; i +=1){
-  //   console.log(testitems[i].description);
-  //   const itemTest = new Item(testitems.name, testitems.inStore, testitems.inStoke )
-  // }
-  
-  //first create the items and store them in the reducer, then create the component
+function Item({ price, pictureSrc, description, inStock }) {
   return (
-    <div>
-
+    <div className="item">
+      <img src={pictureSrc} alt={description} className="item-image" />
+      <div className="item-details">
+        <p className="item-description">{description}</p>
+        <p className="item-price">{price}</p>
+        <button disabled={!inStock} className="item-button">
+          {inStock ? "Add to Cart" : "Sold Out"}
+        </button>
+      </div>
+      <Item key={index} name={item.name} img={item.img} description={item.description} price={item.price} inStore={item.inStore} inStock={item.inStoke} />
     </div>
   );
-
 }
-
-
-export default Container;
